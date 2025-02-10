@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+        }
+
+        .card {
+            width: 30%;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px); /* Card moves up when hovered */
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .card h3 {
+            font-size: 24px;
+        }
+
+        .card p {
+            font-size: 16px;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .card {
+            animation: fadeIn 2s ease-in-out; /* Apply fade-in animation */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <h3>Card 1</h3>
+            <p>This is a card with CSS3 effects.</p>
+        </div>
+        <div class="card">
+            <h3>Card 2</h3>
+            <p>This is another card with a hover effect.</p>
+        </div>
+        <div class="card">
+            <h3>Card 3</h3>
+            <p>This card is animated on load.</p>
+        </div>
+    </div>
+
+</body>
+</html>
