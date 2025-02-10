@@ -1,0 +1,28 @@
+/* Styling for Ordered List */
+ol {
+    padding-left: 20px;
+    font-family: Arial, sans-serif;
+}
+
+ol li {
+    font-size: 18px;
+    color: #b91b1b;
+}
+
+/* Styling for Unordered List */
+ul {
+    padding-left: 20px;
+    font-family: Arial, sans-serif;
+}
+
+ul li {
+    font-size: 18px;
+    color: #1427d6;
+}
+
+/* Styling for headers */
+h2 {
+    font-size: 24px;
+    color: #13e21e;
+    text-align: center;
+}
